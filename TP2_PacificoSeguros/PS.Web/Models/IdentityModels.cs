@@ -29,5 +29,10 @@ namespace PS.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<PS.Web.Areas.Prestadora.Models.PrestadoraViewModel> Prestadoras { get; set; }
+        public System.Data.Entity.DbSet<PS.Web.Areas.Prestadora.Models.TipoPrestadora> TiposPrestadora { get; set; }
+        public System.Data.Entity.DbSet<PS.Web.Areas.Prestadora.Models.SolicitudAfiliacion> SolicitudesAfiliacion { get; set; }
+        public System.Data.Entity.DbSet<PS.Web.Areas.Prestadora.Models.Invitacion> Invitaciones { get; set; }
     }
 }

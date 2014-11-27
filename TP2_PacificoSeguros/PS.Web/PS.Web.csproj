@@ -158,6 +158,10 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Prestadora\Controllers\GestionController.cs" />
+    <Compile Include="Areas\Prestadora\Models\PrestadoraDBInitializer.cs" />
+    <Compile Include="Areas\Prestadora\Models\PrestadoraViewModel.cs" />
+    <Compile Include="Areas\Prestadora\PrestadoraAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -179,6 +183,14 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Prestadora\Views\web.config" />
+    <Content Include="Areas\Prestadora\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Gestion\Create.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Gestion\Delete.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Gestion\Details.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Gestion\Edit.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Gestion\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -236,6 +248,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PS.DAL\PS.DAL.csproj">
+      <Project>{1ca15381-9b51-475e-b4bb-0adedc1b9117}</Project>
+      <Name>PS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PS.Domain\PS.Domain.csproj">
+      <Project>{e3ac7e87-965f-4bbf-bac7-ed3987f56617}</Project>
+      <Name>PS.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
