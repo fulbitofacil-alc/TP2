@@ -33,4 +33,23 @@
         }           
 
     });
+
+    $("#RUC").keyup(function () {
+        $("#Nombre").val('');
+        $("#Direccion").val('');
+        $("#Tipo_Descripcion").val('');
+        $("#Tipo_Id").val('');
+    });
+
+    $("#createForm").submit(function (e) {
+        if ($(this).valid()) {
+            var r = confirm("¿Está seguro que desea registrar la solicitud de afiliación?");
+            if (r == false) {
+                e.preventDefault();
+            }
+        }
+        
+    });
+
+    
 });

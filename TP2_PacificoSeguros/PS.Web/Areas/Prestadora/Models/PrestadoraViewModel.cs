@@ -47,9 +47,9 @@ namespace PS.Web.Areas.Prestadora.Models
     [Table("SolicitudAfiliacion")]
     public class SolicitudAfiliacion
     {
-        public int Id { get; set; }
+        public  int Id { get; set; }
         public DateTime FechaIngreso { get; set; }
-        public PrestadoraViewModel Prestadora { get; set; }
+        public virtual PrestadoraViewModel Prestadora { get; set; }
         public string Observaciones { get; set; }
     }
 }

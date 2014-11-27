@@ -191,6 +191,7 @@
     <Content Include="Areas\Prestadora\Views\Gestion\Details.cshtml" />
     <Content Include="Areas\Prestadora\Views\Gestion\Edit.cshtml" />
     <Content Include="Areas\Prestadora\Views\Gestion\Index.cshtml" />
+    <Content Include="Areas\Prestadora\Views\Gestion\Confirmacion.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

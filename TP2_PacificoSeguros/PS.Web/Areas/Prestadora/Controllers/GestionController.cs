@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using PS.Web.Areas.Prestadora.Models;
 using PS.Web.Models;
 using PS.DAL;
+using System.Data.Entity.Validation;
 
 namespace PS.Web.Areas.Prestadora.Controllers
 {
@@ -48,13 +49,48 @@ namespace PS.Web.Areas.Prestadora.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,RUC,Nombre,Direccion,TelefonoContacto,Representante")] PrestadoraViewModel prestadoraViewModel)
+        public ActionResult Create([Bind(Include = "RUC,Nombre,Direccion,Tipo,TelefonoContacto,Representante,Observaciones")] PrestadoraViewModel prestadoraViewModel)
         {
             if (ModelState.IsValid)
             {
-                db.Prestadoras.Add(prestadoraViewModel);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                try
+                {
+                    var tipo = db.TiposPrestadora.FirstOrDefault(x => x.Id == prestadoraViewModel.Tipo.Id);
+
+                    var prestadora = db.Prestadoras.FirstOrDefault(x => x.RUC == prestadoraViewModel.RUC);
+                    prestadora.Tipo = tipo;
+                    prestadora.TelefonoContacto = prestadoraViewModel.TelefonoContacto;
+                    prestadora.Representante = prestadoraViewModel.Representante;
+
+                    var solicitudAfiliacion = db.SolicitudesAfiliacion.FirstOrDefault(x => x.Prestadora.RUC == prestadora.RUC);
+                    if (solicitudAfiliacion == null)
+                    {
+                        solicitudAfiliacion = new SolicitudAfiliacion() { FechaIngreso = DateTime.Today, Prestadora = prestadora, Observaciones = prestadoraViewModel.Observaciones };
+                        db.SolicitudesAfiliacion.Add(solicitudAfiliacion);
+                        db.SaveChanges();
+                        return View("Confirmacion");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Ya se creó una solicitud de afiliación para dicha prestadora.");
+                    }
+                }
+                catch (DbEntityValidationException e)
+                {
+                    foreach (var eve in e.EntityValidationErrors)
+                    {
+                        Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                            eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                        foreach (var ve in eve.ValidationErrors)
+                        {
+                            Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
+                                ve.PropertyName, ve.ErrorMessage);
+                        }
+                    }
+                    throw;
+                }
+
+
             }
 
             return View(prestadoraViewModel);
@@ -130,7 +166,7 @@ namespace PS.Web.Areas.Prestadora.Controllers
         public ActionResult ValidarRUC(string RUC)
         {
             var prestadoraInvitada = db.Invitaciones.FirstOrDefault(x => x.Prestadora.RUC == RUC);
-            
+
             if (prestadoraInvitada != null)
             {
                 var prestadora = prestadoraInvitada.Prestadora;
@@ -139,7 +175,7 @@ namespace PS.Web.Areas.Prestadora.Controllers
             else
             {
                 return Json(false, JsonRequestBehavior.AllowGet);
-            }            
+            }
 
         }
     }

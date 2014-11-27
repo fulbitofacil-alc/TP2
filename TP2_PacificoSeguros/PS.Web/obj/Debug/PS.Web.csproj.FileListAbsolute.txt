@@ -74,6 +74,8 @@ H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\Microsoft.Owin.Security.Twitter.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\Microsoft.Web.Infrastructure.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\Newtonsoft.Json.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\Owin.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.DAL.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.Domain.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.Helpers.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.Mvc.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.Optimization.dll
@@ -82,6 +84,8 @@ H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.WebPages.Deployment.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.WebPages.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.WebPages.Razor.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\WebGrease.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.DAL.pdb
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.Domain.pdb
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.Helpers.xml
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.Mvc.xml
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\System.Web.Optimization.xml
@@ -108,7 +112,3 @@ H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\Microsoft.Owin.Security.MicrosoftAc
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\obj\Debug\PS.Web.csprojResolveAssemblyReference.cache
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\obj\Debug\PS.Web.dll
 H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\obj\Debug\PS.Web.pdb
-H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.DAL.dll
-H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.Domain.dll
-H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.DAL.pdb
-H:\GitHub\TP2\TP2_PacificoSeguros\PS.Web\bin\PS.Domain.pdb
