@@ -1,0 +1,9 @@
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\PS.Domain.dll.config
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\PS.Domain.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\PS.Domain.pdb
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\EntityFramework.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\EntityFramework.SqlServer.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\EntityFramework.xml
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\bin\Debug\EntityFramework.SqlServer.xml
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\obj\Debug\PS.Domain.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.Domain\obj\Debug\PS.Domain.pdb

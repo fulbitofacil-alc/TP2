@@ -1,0 +1,12 @@
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\PS.DAL.dll.config
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\PS.DAL.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\PS.DAL.pdb
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\EntityFramework.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\EntityFramework.SqlServer.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\PS.Domain.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\PS.Domain.pdb
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\EntityFramework.xml
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\bin\Debug\EntityFramework.SqlServer.xml
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\obj\Debug\PS.DAL.csprojResolveAssemblyReference.cache
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\obj\Debug\PS.DAL.dll
+H:\GitHub\TP2\TP2_PacificoSeguros\PS.DAL\obj\Debug\PS.DAL.pdb
